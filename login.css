@@ -1,0 +1,160 @@
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    flex-direction: column;
+}
+
+/* Home Button */
+.home-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.home-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.home-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.home-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Form Styling */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Fields */
+.input-container {
+    margin-bottom: 15px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.input-container input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+.signup-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.signup-btn:hover {
+    background-color: #218838;
+}
+
+/* Switch Form Section */
+.switch-form p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.switch-form button {
+    background: none;
+    border: none;
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.switch-form button:hover {
+    text-decoration: none;
+}
+
+/* Forgot Password Link */
+.forgot-password a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Home Link */
+.home-link {
+    margin-top: 15px;
+}
+
+.home-link button {
+    background-color: #f8f9fa;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+}
+
+.home-link button:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Hide Elements */
+.hidden {
+    display: none;
+}

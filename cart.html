@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Online Malligai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="./cart.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>
+                <a href="./front.html" style="text-decoration: none;color: inherit;">𝔒𝔫𝔩𝔦𝔫𝔢 𝔪𝔞𝔩𝔩𝔦𝔤𝔞𝔦</a>
+            </h1>
+        </div>
+        <div class="user-options">
+            <a href="./front.html">Home</a>
+            <a href="login.html" class="login-link">
+                <!-- <span>Login</span> -->
+                <i class="fa-solid fa-user login-icon"></i>
+            </a>
+            <!-- <a href="#">Cart</a> -->
+        </div>
+    </header>
+    <main>
+        <h2>Your Cart</h2>
+        <div id="cart-container"></div>
+        <div id="cart-total"></div>
+        <button id="placeOrderButton"style="display: none;">Place Order</button>
+    </main>
+
+    <!-- Modal for Order Form -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Order Details</h2>
+            <form id="orderForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="address">Address:</label>
+                <textarea id="address" required></textarea>
+                
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" required>
+                
+                <label for="paymentMethod">Payment Method:</label>
+                <!-- <input type="text" id="name" name="name" placeholder="Choose Your Payment Menthod"> -->
+                <select id="paymentMethod" required>
+                    <option value="" disabled selected> Choose Payment Method</option>
+                    <option value="UPI">UPI</option>
+                    <option value="creditCard">Credit Card</option>
+                    <option value="debitCard">Debit Card</option>
+                    <option value="netBanking">Net Banking</option>
+                    <option value="cashOnDelivery">Cash on Delivery</option>
+                </select>
+                <center>
+                <button type="submit">Submit Order</button>
+                </center>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Online Malligai. All rights reserved.</p>
+    </footer>
+
+    <script src="./crt.js"></script>
+</body>
+</html>

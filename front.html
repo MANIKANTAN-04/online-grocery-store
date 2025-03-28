@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Malligai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"> <!-- Added this line -->
+    <link rel="stylesheet" href="./stls.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1 style="margin-top: 2px;">
+                <a href="./front.html" style="text-decoration: none;color: inherit;">𝔒𝔫𝔩𝔦𝔫𝔢 𝔪𝔞𝔩𝔩𝔦𝔤𝔞𝔦</a></h1>
+        </div>
+        
+        <div class="search-bar-container">
+            <input type="text" placeholder="Search Products" class="search-bar">
+            <button class="search-btn" style="border: none; background: none; padding: 0;">
+                <i class="fa-solid fa-magnifying-glass" style="font-size: 16px; color: #ffffff;"></i>
+            </button>
+        </div>
+
+        <div class="user-options">
+            <input type="text" placeholder="Enter Location"  class="location">
+            <a href="./login.html" class="login-link" onclick="openModal('login')">
+                <span>Login</span>
+                <i class="fa-solid fa-user login-icon"></i>
+            </a>
+            <!-- <a href="./cart.html">Cart</a> -->
+            <a href="./cart.html" class="cart-link">
+                <i class="bi bi-cart" style="font-size: 20px; margin-right: 5px;"></i> Cart
+            </a>
+            
+            <p id="displayno"></p>
+        </div>
+    </header>
+    <main>
+        <div class="hero-image">
+            <img src="./dennis-siqueira-QnMeRW36-zY-unsplash.jpg" alt="Hero Image">
+        </div>
+        <div class="product-container">
+            <!-- Repeatable Product Card -->
+            <div class="product-card">
+                <img src="./wahaj-sufian-ocd_xKscv1I-unsplash.jpg" alt="Product Image" class="product-image">
+                <div class="product-info">
+                    <h2>Rice</h2>
+                    <P>1kg</P>
+                    <p>Product Price:₹80</p>
+                    <p>Basmati Rice</p>
+                    <button class="add-to-cart-btn">Add to Cart</button> 
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./world-diabetes-day-sugar-wooden-bowl-dark-surface.jpg" alt="Product Image 3" class="product-image">
+                <div class="product-info">
+                    <h2>Sugar</h2>
+                    <p>1Kg</p>
+                    <p>Product Price: ₹100</p>
+                    <p>Fortune Sugar</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./download (9).jpeg" alt="Product Image 4" class="product-image">
+                <div class="product-info">
+                    <h2>Biscuit</h2>
+                    <p>1 pack</p>
+                    <p>Product Price: ₹30</p>
+                    <p>Britannia Milk Bikis Biscuit</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./images.jpeg" alt="Product Image 5" class="product-image">
+                <div class="product-info">
+                    <h2>Chocolate</h2>
+                    <p>140g</p>
+                    <p>Product Price: ₹200</p>
+                    <p>Sweet Yedu Kondadu</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./download 11.jpeg" alt="Product Image 6" class="product-image">
+                <div class="product-info">
+                    <h2> Juice</h2>
+                    <p>720 ml</p>
+                    <p>Product Price: ₹50</p>
+                    <p>Fresh Orange Juice</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./download 12.jpeg" alt="Product Image 7" class="product-image">
+                <div class="product-info">
+                    <h2>Ice Cream</h2>
+                    <p>1 Piece</p>
+                    <p>Product Price: ₹150</p>
+                    <p>Vanilla Ice Cream</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./download 13.jpeg" alt="Product Image 8" class="product-image">
+                <div class="product-info">
+                    <h2>Bakes</h2>
+                    <p>10 Pieces</p>
+                    <p>Product Price: ₹120</p> 
+                    <p>Assorted Baked Goods</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./61Nbhqg5DDL._SX679_.jpg" alt="product-image 9" class="product-image">
+                <div class="product-info">
+                    <h2>Arokya Milk</h2>
+                    <p>500 ml</p>
+                    <p>Product price: ₹37 </p>
+                    <p>Arokya Full cream Milk</p>
+                    <button class="add-to-cart-btn">Add to cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./00463c55-c37c-4b6d-819a-b3b806a418ca.webp" alt="Product Image 9" class="product-image">
+                <div class="product-info">
+                    <h2>Oil</h2>
+                    <p>1L</p>
+                    <p>Product Price: ₹150</p>
+                    <p>Fortune Sunflower Oil</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./61ynnqPkvxL.jpg" alt="Product Image 10" class="product-image">
+                <div class="product-info">
+                    <h2>Tea</h2>
+                    <p>500 g</p>
+                    <p>Product Price: ₹200</p>
+                    <p>Kanan Devan Tea</p>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Online Malligai. All rights reserved.</p>
+    </footer>
+    <script>
+        
+        // Add event listeners to "Add to Cart" buttons
+        const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
+    
+        addToCartButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const productCard = button.closest(".product-card");
+                const productName = productCard.querySelector("h2").innerText;
+    
+                // Extract the product price from the correct paragraph
+                const productPriceText = productCard.querySelector("p:nth-of-type(3)").innerText; // Get the product price 
+                console.log(productPriceText);
+
+                const productPrice =productCard.querySelector("p:nth-of-type(2)").innerText.split('₹')[1]
+                console.log(productPrice)
+                // const productPrice = parseInt(productPriceText.replace(/[^0-9]/g, '')); // Extract numeric value
+                
+                
+                const productImage = productCard.querySelector(".product-image").src;
+    
+                // Retrieve cart items from local storage
+                const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    
+                // Check if product already exists in cart
+                const existingProduct = cartItems.find(item => item.name === productName);
+    
+                if (existingProduct) {
+                    existingProduct.quantity += 1; // Increment quantity if item already exists
+                } else {
+                    cartItems.push({
+                        name: productName,
+                        price: productPrice,
+                        image: productImage,
+                        quantity: 1 // Initialize quantity to 1 for new items
+                    });
+                }
+    
+                // Save updated cart back to local storage
+                localStorage.setItem("cart", JSON.stringify(cartItems));
+
+                // Change button text to "Added to Cart"
+                button.textContent = 'Added to Cart';
+                button.classList.add('added'); // Optional: Add a class for styling
+                button.disabled = true; // Optional: Disable the button after adding to cart
+        
+                // Optionally, you can alert the user or update the UI to reflect the addition
+                // alert(`${productName} has been added to your cart!`);
+            });
+        });
+    </script>
+</body>
+</html>
